@@ -23,7 +23,11 @@ public class LeapYearTest {
             arguments(2000, true),
             arguments(2001, false),
             arguments(2002, false),
-            arguments(2003, false)
+            arguments(2003, false),
+            arguments(2004, true),
+            arguments(2021, false),
+            arguments(2022, false),
+            arguments(2024, true)
 
 
         );
@@ -36,6 +40,7 @@ public class LeapYearTest {
         assertThat(year.isLeapYear(), is(expected));
     }
     
+
     
     
 }
