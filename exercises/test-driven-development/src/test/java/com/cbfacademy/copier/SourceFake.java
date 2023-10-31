@@ -6,9 +6,8 @@ public class SourceFake implements Source{
 
     @Override
     public char getChar() {
-        this.numberOfCalls = this.numberOfCalls+1;
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getChar'");
+        this.numberOfCalls = this.numberOfCalls + 1;
+        return 'a';
     }
 
     public boolean wasCalled() {

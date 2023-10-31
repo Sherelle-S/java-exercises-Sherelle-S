@@ -11,7 +11,8 @@ public class CharacterCopier {
     }
 
     public void copy(){
-        
+       final char character = this.source.getChar();
+       this.destination.setChar(character);
     }
 
 }
